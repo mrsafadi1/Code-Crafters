@@ -1,0 +1,428 @@
+
+html { scroll-behavior: smooth; }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2c2c2c;
+    color: #fff;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #616161;
+    padding: 20px 20px;    
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    transition: transform 0.25s ease-in-out;
+    
+  }
+  .logo{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .logo img{
+    width: 130px;
+    height: auto;
+  }
+  
+  nav button {
+    background: none;
+    border: none;
+    color: #fff;
+    margin: 0 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  nav button:hover, .contact-btn:hover {
+    background-color: #555050;
+    border-radius: 4px;
+  }
+  
+  .contact-btn {
+    background-color: #FFF100;
+    color: #2c2c2c;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .section {
+    padding: 32px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .hero {
+    background: linear-gradient(135deg, #444, #222);
+    text-align: center;
+  }
+  
+
+  .btn-primary {
+    background-color: #FFF100;
+    color: #2c2c2c;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 14px;
+    transition: background 0.3s;
+    font-weight: bold;
+  }
+  
+  .btn-primary:hover {
+    background-color: #555050;
+  }
+  
+  .about, .services, .projects, .contact {
+    margin-top: 24px;
+  }
+  
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  
+  .service-card {
+    background-color: #3a3a3a;
+    padding: 16px;
+    border-radius: 8px;
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px); /* prevent more than 3 per row */
+    min-width: 200px;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  @media (max-width: 900px) {
+    .service-card {
+      flex: 1 1 calc(50% - 20px);
+      max-width: calc(50% - 20px);
+    }
+  }
+  
+  /* Mobile (1 per row) */
+  @media (max-width: 600px) {
+    .service-card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+
+  .service-title span {
+    background: #FFD700;   /* Yellow highlight */
+    color: black;           /* White text */
+    padding: 4px 8px;
+    border-radius: 4px;    /* Rounded edges like a marker */
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+  
+  .tags {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #ccc;
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+  
+  .project-card {
+    background-color: #3a3a3a;
+    flex: 1 1 calc(33.333% - 20px); /* 3 per row */
+    max-width: calc(33.333% - 20px); /* prevent more than 3 per row */
+    border-radius: 8px;
+    min-width: 280px;
+    /* width: calc(50% - 20px); */
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 900px) {
+    .project-card {
+      flex: 1 1 calc(50% - 20px); 
+      max-width: calc(50% - 20px); /* 2 per row on tablets */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .project-card {
+      flex: 1 1 100%; 
+      max-width: 100%; /* 1 per row on mobile */
+    }
+  }
+  
+  .project-card h3{
+    background: #FFD700;   /* Yellow highlight */
+    color: #111;           /* White text */
+    padding: 4px 8px;
+    border-radius: 4px;    /* Rounded edges like a marker */ 
+  }
+
+  .project-card p{
+    margin: 1%;
+    padding-left: 4%;
+  }
+
+  .project-card a {
+    display: inline-block;
+    margin: 12px;
+    padding: 10px 16px;
+    background: #FFD700;   /* Yellow highlight */
+    color: #111;            /* dark text for contrast */
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+
+  .project-card a:hover {
+    color: black;   /* slightly darker yellow on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  .project-card img {
+    max-width: 100%;
+    border-radius: 4px;
+  }
+
+  
+  
+  .contact-details p {
+    margin: 6px 0;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+  }
+
+  /* Container for the two columns */
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap; /* makes it responsive on small screens */
+    gap: 24px; /* spacing between columns */
+    margin-top: 16px;
+  }
+  
+  /* Left column: form */
+  .contact-form-wrapper {
+    flex: 1;
+    min-width: 300px; /* ensures a minimum width */
+  }
+  
+  /* Right column: contact details */
+  .contact-details-wrapper {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;   
+  }
+  
+  /* Style form inputs for consistency */
+  .contact-form input{
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  .contact-form textarea{
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  /* Style the button */
+  .contact-form button {
+    padding: 10px 16px;
+    background-color: #FFF100; /* match your theme */
+    color: #2c2c2c;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  @media(max-width: 768px){
+    .services-grid {
+      flex-direction: column;
+    }
+    .project-card {
+      width: 100%;
+    }
+  }
+
+  /* Example footer styling */
+.footer {
+    background-color: #222; /* same as header background if applicable */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-bottom: 8px;
+  }
+  
+  .footer-nav button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 8px 12px;
+    transition: color 0.3s;
+  }
+  
+  .footer-nav button:hover {
+    color: #00aaff; /* or your accent color */
+  }
+  
+ /* === Mobile list button in header (right side) === */
+.mobile-toggle{
+  /* lives inside the header's flex row */
+  display: none;                 /* shown on mobile via media query below */
+  margin-left: auto;             /* push to the far right of the header */
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: #4a4a4a;
+  color: #fff;
+  font-size: 35px;               /* bigger icon */
+  border: 2px solid #fff;     /* yellow ring */
+  box-shadow: 0 4px 14px rgba(0,0,0,.25);
+  outline: none;
+  border-inline: 2px solid #fff; /* keep theme ring consistent */
+}
+
+@media (max-width: 768px){
+  .desktop-nav{ display:none; }
+  .mobile-toggle{
+    display: inline-grid;
+    place-items: center;         /* center the icon */
+  }
+}
+
+/* === Mobile menu — full-screen overlay (only nav visible) === */
+.mobile-menu{
+  position: fixed;
+  inset: 0;                        /* cover the whole viewport */
+  z-index: 999;                    /* under the toggle but above everything else */
+  background: #2f2f2f;             /* solid dark so nothing else is visible */
+  overflow: auto;                  /* scroll if items exceed viewport */
+}
+.mobile-menu[hidden]{ display:none !important; }
+
+.mobile-menu .menu-panel{
+  min-height: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 24px 20px calc(24px + env(safe-area-inset-bottom, 0px));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;         /* center the list vertically */
+  gap: 14px;
+}
+
+.mobile-menu .mobile-link{
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 16px 14px;
+  border-radius: 12px;
+  color: #fff;
+  background: transparent;
+  border: 1px solid transparent;
+  font-size: 18px;
+}
+.mobile-menu .mobile-link:hover{ background:#3a3a3a; }
+.mobile-menu .mobile-link.contact{
+  background:#f6ee2b; color:#111; font-weight:700;
+}
+.mobile-menu .mobile-link.contact:hover{ background:#e9df24; }
+
+/* When menu is open, prevent page from scrolling underneath */
+body.no-scroll{ overflow: hidden; }
+#home, #services, #projects, #about, #contact {
+  scroll-margin-top: calc(64px + 2px); } /* match your header height */
+
+.about-section {
+  background: whitesmoke;
+  padding: 50px 20px;
+  border-radius: 12px;
+  max-width: 900px;
+}
+
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.section-title span {
+  background: #FFD700;   /* yellow highlight behind white text */
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin:3%;
+  color: black;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-list li {
+  margin-bottom: 14px;
+  padding-left: 28px;
+  position: relative;
+}
+
+.about-list li::before {
+  content: "✔"; /* yellow checkmark bullet */
+  color: #FFD700;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+
+

@@ -1,0 +1,137 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CodeCrafters — Company Profile</title>
+    <link rel="stylesheet" href="headerStyle.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Header (from Header.js) -->
+    <header class="header">
+        <div class="logo">
+            <img src="demo.png" alt="CodeCrafters Logo" height="40" />
+        </div>
+        <nav>
+            <!-- <button data-nav="home">Home</button> -->
+            <button data-nav="services">Our Services</button>
+            <button data-nav="projects">Projects</button>
+            <button data-nav="about">About Us</button>
+            <button class="contact-btn" data-nav="contact">Contact Us</button>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="site-layout">
+        <!-- HERO -->
+        <section id="home" class="section hero">
+            <h1>Welcome to CodeCrafters</h1>
+            <p>Your partner in innovative web development</p>
+            <button class="btn-primary" data-nav="services">Get Started</button>
+        </section>
+
+
+        <!-- SERVICES -->
+        <section id="services" class="section services">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Web Design</h3>
+                    <p>Creating beautiful, user-friendly website designs.</p>
+                    <div class="tags">HTML, CSS, Adobe XD</div>
+                </div>
+                <div class="service-card">
+                    <h3>Development</h3>
+                    <p>Building robust web applications and sites.</p>
+                    <div class="tags">React, Node.js, PHP</div>
+                </div>
+                <div class="service-card">
+                    <h3>SEO & Marketing</h3>
+                    <p>Optimizing your website for search engines and marketing.</p>
+                    <div class="tags">Google Analytics, SEMrush</div>
+                </div>
+                <div class="service-card">
+                    <h3>Maintenance</h3>
+                    <p>Providing ongoing support and updates.</p>
+                    <div class="tags">Hosting, Security, Updates</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section projects">
+            <h2>Our Projects</h2>
+            <div class="cards-container">
+                <div class="project-card">
+                    <img src="project1.jpg" alt="Project 1" />
+                    <h3>E-Commerce Website</h3>
+                    <p>A full-featured e-commerce platform.</p>
+                    <a href="#" target="_blank" rel="noopener noreferrer">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="project2.jpg" alt="Project 2" />
+                    <h3>Portfolio Website</h3>
+                    <p>A sleek portfolio for a creative professional.</p>
+                    <a href="#" target="_blank" rel="noopener noreferrer">View Project</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ABOUT -->
+        <section id="about" class="section about">
+            <h2>About Us</h2>
+            <p>We are a passionate web development company dedicated to building high-quality websites and applications
+                with a focus on innovation and client satisfaction.</p>
+            <div class="ceo-info">
+                <img src="ceo-image.jpg" alt="CEO" class="ceo-image" />
+                <h3>Alaa Safadi - CEO</h3>
+            </div>
+        </section>
+
+
+        <!-- CONTACT -->
+        <section id="contact" class="section contact">
+            <h2>Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <input type="text" name="name" placeholder="Name" required />
+                        <input type="tel" name="phone" placeholder="Phone" required />
+                        <input type="email" name="email" placeholder="Email" required />
+                        <textarea name="message" placeholder="Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-details-wrapper">
+                    <div class="contact-details">
+                        <p><strong>Phone:</strong> +1 234 567 8901</p>
+                        <p><strong>Email:</strong> info@codecrafters.com</p>
+                        <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-nav">
+                <!-- <button data-nav="home">Home</button> -->
+                <button data-nav="about">About</button>
+                <button data-nav="services">Services</button>
+                <button data-nav="projects">Projects</button>
+                <button data-nav="contact">Contact</button>
+            </div>
+            <p>&copy; <span id="year"></span> CodeCrafters. All rights reserved.</p>
+        </footer>
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

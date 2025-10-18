@@ -1,0 +1,201 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="Images/icon.png" />
+    <title>CodeCrafters — Company</title>
+    <link rel="stylesheet" href="headerStyle.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="description"
+        content="CodeCrafters builds websites, full-stack apps, mobile apps, and data dashboards, with SEO, cloud hosting and security.">
+
+</head>
+
+<body>
+    <!-- Header (from Header.js) -->
+    <header class="header">
+        <!-- <div class="logo">
+            <img src="Images/demo.png" alt="CodeCrafters Logo" height="40" />
+        </div> -->
+        <button class="logo" data-nav="home" aria-label="Go to top">
+            <img src="Images/demo.png" alt="CodeCrafters Logo" height="40" />
+        </button>
+
+        <!-- Desktop nav -->
+        <nav class="desktop-nav">
+            <!-- <button data-nav="home">Home</button> -->
+            <button data-nav="services">Our Services</button>
+            <button data-nav="projects">Projects</button>
+            <button data-nav="about">About Us</button>
+            <button class="contact-btn" data-nav="contact">Contact Us</button>
+        </nav>
+
+        <!-- Mobile list button (right side) -->
+        <button class="mobile-toggle" id="mobileToggle" aria-expanded="false" aria-controls="mobileMenu"
+            aria-label="Open menu">☰</button>
+    </header>
+
+    <nav class="mobile-menu" id="mobileMenu" hidden>
+        <div class="menu-panel">
+            <button data-nav="services" class="mobile-link">Our Services</button>
+            <button data-nav="projects" class="mobile-link">Projects</button>
+            <button data-nav="about" class="mobile-link">About Us</button>
+            <button data-nav="contact" class="mobile-link contact">Contact Us</button>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <main class="site-layout">
+        <!-- HERO -->
+        <section id="home" class="section hero">
+            <h1>Welcome to CodeCrafters</h1>
+            <p>Your partner in innovative web development</p>
+            <button class="btn-primary" data-nav="services">Get Started</button>
+        </section>
+
+
+        <!-- SERVICES -->
+        <section id="services" class="section services">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3 class="service-title"><span>Custom Web Development</span></h3>
+                    <p>Design and build responsive websites that adapt seamlessly to desktop, tablet, and mobile, with
+                        optimized performance.</p>
+                    <div class="tags">HTML5 · CSS3 · JavaScript · React · Bootstrap · TailwindCSS</div>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-title"><span>Mobile Application Development</span></h3>
+                    <p>Design and develop mobile applications for Android and iOS with seamless
+                        performance and modern UI.</p>
+                    <div class="tags">Flutter · Dart · Java · Swift · Firebase · REST API · Push Notifications · Payment
+                        gateway</div>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-title"><span>Full-Stack Applications</span></h3>
+                    <p>Developing end-to-end applications, from backend APIs to interactive frontends, tailored to your
+                        business needs.</p>
+                    <div class="tags">Python · Django · Java · Spring Boot · Node.js · REST API · OracleDB ·
+                        GraphQL · MongoDB</div>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-title"><span>Data Analytics & Dashboards</span></h3>
+                    <p>Transform raw data into actionable insights with dynamic dashboards, reports, and visualizations
+                        to guide decision-making.</p>
+                    <div class="tags">Python · Pandas · NumPy · Matplotlib · Plotly · Power BI · Tableau · SQL · ETL
+                    </div>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-title"><span>SEO Optimization</span></h3>
+                    <p>Boost online visibility with technical SEO, keyword research, and performance optimization to
+                        rank higher on search engines.</p>
+                    <div class="tags">On-Page SEO · Technical SEO · Google Analytics · Google Console · Schema Markup
+                    </div>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-title"><span>Digital & Social Media Marketing</span></h3>
+                    <p>Plan and execute targeted campaigns to grow engagement, track results, and optimize ROI with
+                        data-driven strategies.</p>
+                    <div class="tags">Facebook & Instagram Marketing · Google Ads · Email Marketing · Content
+                        Strategy · Analytics</div>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-title"><span>Hosting & Deployment Solutions</span></h3>
+                    <p>Deploy, host and scale web applications with reliable cloud infrastructure. Ensure top-level
+                        security, updates and ongoing maintenance to keep your systems running.</p>
+                    <div class="tags">AWS · Firebase · Docker · CI/CD · SSL Certificates · Firewall · Monitoring ·
+                        Security Audits</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section projects">
+            <h2>End-to-End & Collaborative Projects</h2>
+            <div class="cards-container">
+                <div class="project-card">
+                    <img src="Images/project1.png" alt="Project 1" loading="lazy" />
+                    <h3>Harmony Community</h3>
+                    <p>Harmony community serving as a central hub for connecting Arab professionals through innovative
+                        and engaging networking initiatives.</p>
+                    <a href="https://harmony-network.org/en/" target="_blank" rel="noopener noreferrer">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="Images/project1.png" alt="Project 2" loading="lazy" />
+                    <h3>Jawlan Archive - ارشيف الجولان</h3>
+                    <p>Archive of events in the wind turbine project in the Golan Heights and how the residents
+                        responded to it.<br></p>
+                    <a href="https://www.jawlanarchive.org/" target="_blank" rel="noopener noreferrer">View Project</a>
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section id="about" class="section about-section">
+            <h2 class="section-title">About Us</h2>
+            <ul class="about-list">
+                <li><strong>Who we are:</strong> At <em>CodeCrafters</em>, we bring together creativity, technology, and
+                    data to build digital solutions that empower businesses to grow.</li>
+                <li><strong>Our approach:</strong> Every project is more than just code — it’s about solving problems
+                    end-to-end with reliable, scalable, user-focused solutions.</li>
+                <li><strong>What we build:</strong> From responsive websites and full-stack applications to custom
+                    dashboards and predictive analytics, we craft tools that deliver value.</li>
+                <li><strong>Beyond development:</strong> We connect technology with strategy — ensuring platforms are
+                    secure, optimized, and discoverable with cloud hosting, updates, SEO, and social media marketing.
+                </li>
+                <li><strong>Our mission:</strong> Turning ideas into impactful digital products that deliver measurable
+                    business results.</li>
+                <li><strong>Who we serve:</strong> Startups, small businesses, and organizations seeking scalable,
+                    data-driven digital solutions.</li>
+            </ul>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section contact">
+            <h2>Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <input type="text" name="name" placeholder="Name" required />
+                        <input type="tel" name="phone" placeholder="Phone" required />
+                        <input type="email" name="email" placeholder="Email" required />
+                        <textarea name="message" placeholder="Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-details-wrapper">
+                    <div class="contact-details">
+                        <!-- <p><strong>Phone:</strong> (+972) 052 484 4655</p> -->
+                        <p><strong>Email:</strong> info@codecrafters.com</p>
+                        <p><strong>Address:</strong> Majdal Shams, Golan Heights</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-nav">
+                <!-- <button data-nav="home">Home</button> -->
+                <button data-nav="about">About</button>
+                <button data-nav="services">Services</button>
+                <button data-nav="projects">Projects</button>
+                <button data-nav="contact">Contact</button>
+            </div>
+            <p>&copy; <span id="year"></span> CodeCrafters. All rights reserved. <br> 2025</p>
+        </footer>
+    </main>
+
+    <!-- EmailJS (client-side email) -->
+    <script src="config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

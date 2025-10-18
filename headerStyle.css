@@ -1,0 +1,19 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 72px;
+    background: #fff;
+    z-index: 1000;
+    transition: transform 0.25s ease-in-out;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .site-layout { padding-top: 72px; }
+  
+  .header--hidden {
+    transform: translateY(-100%);
+  }
+  
